@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.icon {
+  zoom: 1.2;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 50%;
+}
+.icon:hover {
+  transition: all 0.6s linear;
+  background-color: rgb(127, 138, 237);
+  color: red;
+}
+@media screen and (max-width: 1280px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    gap: 50px;
+  }
+}
+.btn {
+  background-color: #312ed2;
+  color: azure;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
